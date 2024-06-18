@@ -1,0 +1,35 @@
+title = "Oliver Nordbjerg"
+description = "Software engineer"
+base_url = "https://notbjerg.me"
+compile_sass = false
+build_search_index = true
+generate_feed = true
+minify_html = true
+theme = "boring"
+
+[markdown]
+highlight_code = true
+highlight_theme = "nord"
+render_emoji = true
+smart_punctuation = true
+
+[extra]
+homepage_title = "Oliver Nordbjerg"
+homepage_subtitle = "Software engineer"
+google_analytics_measurement_id = ""
+
+[[extra.social]]
+url = "https://github.com/onbjerg"
+icon = "lab la-github"
+
+[[extra.social]]
+url = "https://twitter.com/onbjerg"
+icon = "lab la-twitter"
+
+[[extra.social]]
+url = "mailto:hi@notbjerg.me"
+icon = "las la-at"
+
+#[[extra.social]]
+#url = "cv.pdf"
+#icon = "las la-file-pdf"
