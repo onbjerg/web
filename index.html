@@ -5,197 +5,62 @@
         <title>oliver nordbjerg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="founding engineer @ ithaca" />
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                font-family:
-                    ui-monospace, Menlo, Monaco, "Cascadia Mono",
-                    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
-                    "Ubuntu Mono", "Source Code Pro", "Fira Mono",
-                    "Droid Sans Mono", "Consolas", "Courier New", monospace;
-            }
-            :root {
-                color-scheme: light dark;
-            }
-            body {
-                padding: 1rem;
-            }
-            h1 {
-                font-size: 1.1rem;
-                margin-bottom: 0.25rem;
-            }
-            h2 {
-                font-size: 1rem;
-                margin-bottom: 0.25rem;
-            }
-            header,
-            ul {
-                margin-bottom: 1rem;
-            }
-            ul {
-                margin-left: 1rem;
-            }
-        </style>
+        <link rel="stylesheet" href="/pico.css" />
     </head>
     <body>
-        <!-- inspired by https://awkweb.com/ !-->
-        <header>
-            <h1>oliver nordbjerg</h1>
-            <p>founding engineer @ <a href="https://ithaca.xyz">ithaca</a></p>
-        </header>
-        <section>
-            <h2>socials</h2>
-            <ul>
-                <li><a href="https://github.com/onbjerg">github</a></li>
-                <li><a href="https://twitter.com/onbjerg">x</a></li>
-                <li>hi@notbjerg.me</li>
-            </ul>
-            <h2>open source</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/paradigmxyz/solar">solar</a>: a
-                    fast and contributor friendly solidity compiler, written in
-                    rust
-                </li>
-                <li>
-                    <a href="https://github.com/paradigmxyz/reth">reth</a>: a
-                    modular and blazing fast implementation of the ethereum
-                    protocol, in rust
-                </li>
-                <li>
-                    <a href="https://github.com/foundry-rs/foundry">foundry</a>:
-                    a portable and blazing fast toolkit for ethereum application
-                    development, in rust
-                </li>
-                <li>
-                    <a href="https://github.com/alloy-rs/alloy">alloy</a>:
-                    building blocks for ethereum-like blockchains
-                </li>
-                <li>
-                    <a href="https://github.com/ithacaxyz/odyssey">odyssey</a>:
-                    an experimental testnet ethereum l2 with features from the
-                    future
-                </li>
-            </ul>
-            <h2>closed source</h2>
-            <ul>
-                <li>
-                    <a href="https://porto.sh">porto</a>: an embedded
-                    multi-chain wallet
-                </li>
-            </ul>
-            <h2>pgp</h2>
-            <pre>
------BEGIN PGP PUBLIC KEY BLOCK-----
-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
-+MfVbDcPi+AjiFw= =Djv3
------END PGP PUBLIC KEY BLOCK-----
-            </pre>
-        </section>
+        <main>
+            <header>
+                <h1>oliver nordbjerg</h1>
+                <p>
+                    founding engineer @ <a href="https://ithaca.xyz">ithaca</a>
+                </p>
+            </header>
+            <section>
+                <h2>socials</h2>
+                <ul>
+                    <li><a href="https://github.com/onbjerg">github</a></li>
+                    <li><a href="https://twitter.com/onbjerg">x</a></li>
+                    <li>hi@notbjerg.me</li>
+                    <li><a href="/pgp.asc">pgp</a></li>
+                </ul>
+                <h2>open source</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/paradigmxyz/solar">solar</a
+                        >: a fast and contributor friendly solidity compiler,
+                        written in rust
+                    </li>
+                    <li>
+                        <a href="https://github.com/paradigmxyz/reth">reth</a>:
+                        a modular and blazing fast implementation of the
+                        ethereum protocol, in rust
+                    </li>
+                    <li>
+                        <a href="https://github.com/foundry-rs/foundry"
+                            >foundry</a
+                        >: a portable and blazing fast toolkit for ethereum
+                        application development, in rust
+                    </li>
+                    <li>
+                        <a href="https://github.com/alloy-rs/alloy">alloy</a>:
+                        building blocks for ethereum-like blockchains
+                    </li>
+                    <li>
+                        <a href="https://github.com/ithacaxyz/odyssey"
+                            >odyssey</a
+                        >: an experimental testnet ethereum l2 with features
+                        from the future
+                    </li>
+                    <li>
+                        <a href="https://porto.sh">porto</a>: an embedded
+                        multi-chain wallet
+                    </li>
+                </ul>
+                <small
+                    >built with
+                    <a href="https://picocss.com" rel="_blank">pico</a></small
+                >
+            </section>
+        </main>
     </body>
 </html>
